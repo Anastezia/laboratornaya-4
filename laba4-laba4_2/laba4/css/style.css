@@ -1,0 +1,113 @@
+body{
+	margin: 0;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	background-image:url('https://i.pinimg.com/originals/8d/54/7d/8d547d905a726df97835ce906248f398.jpg') ;
+	background-size: cover; /* не повт*/
+}
+h1{
+	font-family:Comic Sans MS, Comic Sans, cursive, bold	;
+	font-size: 30pt;
+	margin-left: 8%;
+	margin-top: 15%;
+	position:absolute;
+	
+}
+h2{
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	font-size: 20pt;
+
+}
+p{
+	margin:5%;
+}
+#rectangle {
+	width: 30px;
+	height: 15px;
+	background: white;
+	border: 1px solid black;
+	
+	margin-top:3px;
+	margin-left:5px;
+	
+}
+#circle{
+width: 10px; 
+height: 10px;
+background: red;
+border-radius: 50%;
+position: absolute;
+margin-left:9px;
+margin-top:2px;
+
+}
+#menu{
+	
+	position:center;
+}
+#nav, #nav ul, #nav li {
+  margin: 0;
+  padding: 0;
+}
+#nav, #nav ul {
+ background:deepskyblue;
+}
+#nav { /* подменю перемещается относительно меню */
+  position: relative;
+  display: table;
+  width: 100%;
+}
+#nav ul { /* подменю находится вне потока */
+  position: absolute;
+  z-index: 5;
+  display: none;
+}
+#nav li:hover ul { /* подменю будет показано, если курсор наведён на пункт меню с выпадающем списком */
+  display: block;
+}
+#nav li {
+  display: table-cell;
+  text-align: center;
+}
+#nav ul li {
+  display: block;
+  text-align: left;
+}
+#nav right { /* последнее подменю будет расширяться справа налево */
+  direction: rtl;
+}
+#nav right ul { 
+  right: 0;
+}
+#nav right li { 
+  direction: ltr;
+}
+#nav a {
+  display: block;
+  padding: 3px 0;
+  color: black;
+  text-decoration: none;
+}
+#nav ul a {
+  padding: 3px 15px;
+}
+#nav li:hover {
+ background:white;
+}
+
+
+#main_page{
+	margin-left:5%;
+	margin-right:5%;
+	height:600px;
+    background-size: cover;
+	position:center;
+	background:url('https://media.istockphoto.com/photos/blue-glitter-texture-christmas-background-square-composition-picture-id500109418') ;
+	opacity: 95%;
+}
+#photo{
+	margin-right:10%;
+	margin-top: 5%;
+	width:40%;
+	float: right;
+}
+
